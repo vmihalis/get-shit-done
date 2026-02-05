@@ -33,7 +33,8 @@
   },
   "scripts": {
     "test:agents": "node scripts/test-agent-infra.js",
-    "test:state": "node scripts/test-state.js"
+    "test:state": "node scripts/test-state.js",
+    "test:project-init": "node scripts/test-project-init.js"
   },
   "dependencies": {
     "picocolors": "^1.1.1",
