@@ -17,10 +17,10 @@ Requirements for initial release. Full port of GSD to Cline.
 
 ### Core Workflow Commands
 
-- [ ] **CMD-01**: `/gsd:new-project` — questioning, PROJECT.md, config, requirements, roadmap
+- [x] **CMD-01**: `/gsd:new-project` — questioning, PROJECT.md, config, requirements, roadmap
 - [ ] **CMD-02**: `/gsd:plan-phase N` — research + create PLAN.md for phase N
 - [ ] **CMD-03**: `/gsd:execute-phase N` — run all plans in phase with atomic commits
-- [ ] **CMD-04**: `/gsd:progress` — show project state, suggest next action
+- [x] **CMD-04**: `/gsd:progress` — show project state, suggest next action
 - [ ] **CMD-05**: `/gsd:discuss-phase N` — gather context before planning
 
 ### Codebase Analysis
@@ -103,8 +103,8 @@ Deferred to future release.
 | STATE-02 | Phase 3 | Complete |
 | STATE-04 | Phase 3 | Complete |
 | STATE-05 | Phase 3 | Complete |
-| CMD-01 | Phase 4 | Pending |
-| CMD-04 | Phase 4 | Pending |
+| CMD-01 | Phase 4 | Complete |
+| CMD-04 | Phase 4 | Complete |
 | MAP-01 | Phase 5 | Pending |
 | MAP-02 | Phase 5 | Pending |
 | MAP-03 | Phase 5 | Pending |
