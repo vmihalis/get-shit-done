@@ -16,7 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: Agent Infrastructure** - Parallel CLI subagent spawning and result collection
 - [x] **Phase 3: State Management** - .planning/ directory, STATE.md, ROADMAP.md tracking
 - [x] **Phase 4: New Project Workflow** - /gsd:new-project command with questioning and config
-- [ ] **Phase 5: Codebase Mapping** - /gsd:map-codebase for brownfield projects
+- [x] **Phase 5: Codebase Mapping** - /gsd:map-codebase for brownfield projects
 - [ ] **Phase 6: Planning Workflow** - /gsd:plan-phase with research and plan validation
 - [ ] **Phase 7: Execution Workflow** - /gsd:execute-phase with atomic commits
 - [ ] **Phase 8: Verification & Polish** - /gsd:verify-work, /gsd:debug, upstream sync
@@ -100,8 +100,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 05-01-PLAN.md — Mapper orchestration module and Cline workflow
-- [ ] 05-02-PLAN.md — Integration test and package.json update
+- [x] 05-01-PLAN.md — Mapper orchestration module and Cline workflow
+- [x] 05-02-PLAN.md — Integration test and package.json update
 
 ### Phase 6: Planning Workflow
 **Goal**: Users can create validated plans with research support
@@ -165,7 +165,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8
 | 2. Agent Infrastructure | 2/2 | Complete | 2026-02-05 |
 | 3. State Management | 3/3 | Complete | 2026-02-05 |
 | 4. New Project Workflow | 2/2 | Complete | 2026-02-05 |
-| 5. Codebase Mapping | 0/2 | Not started | - |
+| 5. Codebase Mapping | 2/2 | Complete | 2026-02-05 |
 | 6. Planning Workflow | 0/3 | Not started | - |
 | 7. Execution Workflow | 0/3 | Not started | - |
 | 8. Verification & Polish | 0/3 | Not started | - |
