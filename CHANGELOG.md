@@ -1,10 +1,24 @@
 # Changelog
 
-All notable changes to GSD will be documented in this file.
+All notable changes to Cline-GSD will be documented in this file.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
-## [Unreleased]
+## [1.0.0] - 2026-02-05
+
+### Added
+- Initial release of Cline-GSD
+- `npx cline-gsd` installer with platform detection
+- `/gsd:health` workflow for installation verification
+- Cross-platform support (Mac, Windows, Linux)
+- Cline CLI detection with helpful warnings
+- Colorful terminal output with progress spinners
+
+---
+
+## Upstream GSD Changelog
+
+The following changelog entries are from the upstream [glittercowboy/get-shit-done](https://github.com/glittercowboy/get-shit-done) project. Cline-GSD tracks upstream GSD for improvements.
 
 ## [1.11.1] - 2026-01-31
 

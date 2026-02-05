@@ -5,11 +5,19 @@
  * Entry point for `npx cline-gsd`
  */
 
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
 import ora from 'ora';
 import { success, error, warn, info, dim, cyan } from '../src/output.js';
-import { getPlatform, getClineConfigDir } from '../src/platform.js';
+import { getPlatform, getClineConfigDir, getGsdCommandsDir } from '../src/platform.js';
 import { checkClineCli } from '../src/cline-check.js';
+import { install } from '../src/installer.js';
+
+// ESM pattern to get __dirname equivalent
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const pkgRoot = path.join(__dirname, '..');
 
 // ESM pattern to read package.json
 const require = createRequire(import.meta.url);
@@ -115,10 +123,67 @@ async function main() {
   }
 
   // Step 3: Show target directory
-  const configDir = getClineConfigDir();
-  info(`Install location: ${cyan(configDir)}`);
+  const destDir = getGsdCommandsDir();
+  info(`Install location: ${cyan(destDir)}`);
 
-  // TODO: Copy workflow files (Plan 03)
+  // Step 4: Copy workflow files
+  spinner.start('Copying workflows...');
+  try {
+    const result = await install({ verbose: args.verbose, force: args.force });
+    spinner.succeed(`Installed ${result.filesInstalled} workflow(s)`);
+  } catch (err) {
+    spinner.fail('Installation failed');
+    if (err.code === 'EACCES') {
+      error('Permission denied. Try running with elevated privileges or check directory permissions.');
+    } else {
+      error(err.message);
+    }
+    process.exit(1);
+  }
+
+  // Step 5: Show changelog (what's new)
+  await showChangelog();
+
+  // Step 6: Success message
+  console.log();
+  success('Installation complete!');
+  info(`Run ${cyan('/gsd:health')} in Cline to verify.`);
+  console.log();
+}
+
+/**
+ * Display changelog for latest version
+ */
+async function showChangelog() {
+  try {
+    const changelogPath = path.join(pkgRoot, 'CHANGELOG.md');
+    const content = await fs.readFile(changelogPath, 'utf8');
+    // Extract first version section (from ## [x.y.z] to --- or next ## [)
+    const start = content.indexOf('## [');
+    if (start === -1) return;
+
+    // Find end - either --- separator or next version header
+    let end = content.indexOf('\n---', start);
+    const nextVersion = content.indexOf('\n## [', start + 1);
+    if (nextVersion !== -1 && (end === -1 || nextVersion < end)) {
+      end = nextVersion;
+    }
+    if (end === -1) end = content.length;
+
+    const section = content.slice(start, end).trim();
+    if (section) {
+      // Remove the version header line for cleaner output
+      const lines = section.split('\n');
+      const body = lines.slice(1).join('\n').trim();
+      if (body) {
+        console.log('\n' + cyan('--- What\'s New ---'));
+        console.log(body);
+        console.log(cyan('------------------') + '\n');
+      }
+    }
+  } catch {
+    // Changelog not found, skip silently
+  }
 }
 
 // Run main
