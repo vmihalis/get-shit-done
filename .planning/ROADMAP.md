@@ -97,11 +97,11 @@ Plans:
   2. Mappers produce STACK.md, ARCHITECTURE.md, STRUCTURE.md files
   3. Mapping uses CLI subagents (cline "prompt" &) for parallelization
   4. Mapping outputs are synthesized into coherent codebase understanding
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 05-01: Mapper agent prompts and coordination
-- [ ] 05-02: Output synthesis and documentation generation
+- [ ] 05-01-PLAN.md — Mapper orchestration module and Cline workflow
+- [ ] 05-02-PLAN.md — Integration test and package.json update
 
 ### Phase 6: Planning Workflow
 **Goal**: Users can create validated plans with research support
