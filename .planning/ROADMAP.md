@@ -13,7 +13,7 @@ This roadmap transforms GSD (Get Shit Done) into a Cline-compatible framework. T
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Installation & Foundation** - npx installer, platform detection, file structure
-- [ ] **Phase 2: Agent Infrastructure** - Parallel CLI subagent spawning and result collection
+- [x] **Phase 2: Agent Infrastructure** - Parallel CLI subagent spawning and result collection
 - [ ] **Phase 3: State Management** - .planning/ directory, STATE.md, ROADMAP.md tracking
 - [ ] **Phase 4: New Project Workflow** - /gsd:new-project command with questioning and config
 - [ ] **Phase 5: Codebase Mapping** - /gsd:map-codebase for brownfield projects
@@ -53,7 +53,7 @@ Plans:
 
 Plans:
 - [x] 02-01-PLAN.md — Cross-platform agent spawning module and documentation
-- [ ] 02-02-PLAN.md — Output verification, collection, and integration test
+- [x] 02-02-PLAN.md — Output verification, collection, and integration test
 
 ### Phase 3: State Management
 **Goal**: Project state persists across sessions via .planning/ directory
@@ -162,7 +162,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Installation & Foundation | 3/3 | Complete | 2026-02-05 |
-| 2. Agent Infrastructure | 1/2 | In progress | - |
+| 2. Agent Infrastructure | 2/2 | Complete | 2026-02-05 |
 | 3. State Management | 0/3 | Not started | - |
 | 4. New Project Workflow | 0/2 | Not started | - |
 | 5. Codebase Mapping | 0/2 | Not started | - |
