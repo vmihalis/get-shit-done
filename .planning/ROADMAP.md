@@ -73,20 +73,20 @@ Plans:
 - [x] 03-03-PLAN.md — State update operations and integration test
 
 ### Phase 4: New Project Workflow
-**Goal**: Users can initialize new projects with structured questioning
+**Goal**: Users can initialize new projects with structured questioning and check progress
 **Depends on**: Phase 1, Phase 3
 **Requirements**: CMD-01, CMD-04
 **Success Criteria** (what must be TRUE):
-  1. `/gsd:new-project` launches deep questioning methodology
+  1. `/gsd-new-project.md` launches deep questioning methodology
   2. PROJECT.md is created with core value, requirements, and constraints
   3. config.json is created with user preferences (depth, mode, etc.)
-  4. `/gsd:progress` shows current project state and suggests next action
+  4. `/gsd-progress.md` shows current project state and suggests next action
   5. User can resume project after closing and reopening Cline
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 04-01: Questioning workflow and PROJECT.md generation
-- [ ] 04-02: Config generation and progress command
+- [ ] 04-01-PLAN.md — Project-init helper module and new-project workflow
+- [ ] 04-02-PLAN.md — Progress workflow and integration test
 
 ### Phase 5: Codebase Mapping
 **Goal**: Users can analyze existing codebases via parallel mappers
