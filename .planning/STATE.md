@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-05)
 
 **Core value:** Enable Cline users to build complex projects with structured, spec-driven workflow
-**Current focus:** Phase 4 - New Project Workflow
+**Current focus:** Phase 5 - Codebase Mapping
 
 ## Current Position
 
 Phase: 4 of 8 (New Project Workflow)
-Plan: 1 of 2 in current phase
-Status: In progress
-Last activity: 2026-02-05 — Completed 04-01-PLAN.md
+Plan: 2 of 2 in current phase
+Status: Phase complete
+Last activity: 2026-02-05 — Completed 04-02-PLAN.md
 
-Progress: [████░░░░░░] 43%
+Progress: [█████░░░░░] 48%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 9
+- Total plans completed: 10
 - Average duration: 2.3 min
-- Total execution time: 21 min
+- Total execution time: 23 min
 
 **By Phase:**
 
@@ -30,10 +30,10 @@ Progress: [████░░░░░░] 43%
 | 01 | 3 | 7 min | 2.3 min |
 | 02 | 2 | 4 min | 2 min |
 | 03 | 3 | 8 min | 2.7 min |
-| 04 | 1 | 2 min | 2 min |
+| 04 | 2 | 4 min | 2 min |
 
 **Recent Trend:**
-- Last 5 plans: 02-02 (2 min), 03-01 (2 min), 03-02 (3 min), 03-03 (3 min), 04-01 (2 min)
+- Last 5 plans: 03-01 (2 min), 03-02 (3 min), 03-03 (3 min), 04-01 (2 min), 04-02 (2 min)
 - Trend: Stable
 
 *Updated after each plan completion*
@@ -72,6 +72,9 @@ Recent decisions affecting current work:
 - Config defaults intentionally duplicated across modules for independence [04-01]
 - Workflow supports both Write tool and Node.js helper patterns [04-01]
 - 10-step workflow matching upstream GSD new-project flow [04-01]
+- Progress workflow reads state files gracefully (missing files noted, not errored) [04-02]
+- Smart routing with priority-ordered conditions (blocked > unexecuted > complete > all done) [04-02]
+- Integration test pattern: tmpdir isolation, assert/strict, PASS/FAIL, cleanup in finally [04-02]
 
 ### Pending Todos
 
@@ -83,6 +86,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-05 21:33 UTC
-Stopped at: Completed 04-01-PLAN.md
+Last session: 2026-02-05 21:39 UTC
+Stopped at: Completed 04-02-PLAN.md (Phase 4 complete)
 Resume file: None
