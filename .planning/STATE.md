@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-02-05)
 
 **Core value:** Enable Cline users to build complex projects with structured, spec-driven workflow
-**Current focus:** Phase 1 - Installation & Foundation
+**Current focus:** Phase 2 - Agent Infrastructure
 
 ## Current Position
 
-Phase: 1 of 8 (Installation & Foundation)
-Plan: 3 of 3 in current phase
-Status: Phase complete
-Last activity: 2026-02-05 — Completed 01-03-PLAN.md (core installation & health check)
+Phase: 2 of 8 (Agent Infrastructure)
+Plan: 0 of 2 in current phase
+Status: Ready to plan
+Last activity: 2026-02-05 — Phase 1 complete, verified
 
-Progress: [███░░░░░░░] 12%
+Progress: [█░░░░░░░░░] 12%
 
 ## Performance Metrics
 
@@ -52,6 +52,8 @@ Recent decisions affecting current work:
 - CLINE_DIR environment variable override for custom config locations [01-02]
 - Clean install overwrites existing installation without prompts [01-03]
 - Atomic rollback on partial installation failure [01-03]
+- Cline workflows use `/gsd-name` format (not `/gsd:name`) [01-03]
+- Workflows install to ~/Documents/Cline/Workflows/ with gsd- prefix [01-03]
 
 ### Pending Todos
 

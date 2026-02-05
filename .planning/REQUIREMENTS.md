@@ -9,11 +9,11 @@ Requirements for initial release. Full port of GSD to Cline.
 
 ### Installation
 
-- [ ] **INST-01**: User can install via `npx cline-gsd`
-- [ ] **INST-02**: Installer detects platform (Mac, Windows, Linux)
-- [ ] **INST-03**: Installer verifies Cline CLI is installed
-- [ ] **INST-04**: Installer copies workflows to user's Cline config directory
-- [ ] **INST-05**: User can run `/gsd:health` to verify installation
+- [x] **INST-01**: User can install via `npx cline-gsd`
+- [x] **INST-02**: Installer detects platform (Mac, Windows, Linux)
+- [x] **INST-03**: Installer verifies Cline CLI is installed
+- [x] **INST-04**: Installer copies workflows to user's Cline config directory
+- [x] **INST-05**: User can run `/gsd-health` to verify installation
 
 ### Core Workflow Commands
 
@@ -89,13 +89,13 @@ Deferred to future release.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| INST-01 | Phase 1 | Pending |
-| INST-02 | Phase 1 | Pending |
-| INST-03 | Phase 1 | Pending |
-| INST-04 | Phase 1 | Pending |
-| INST-05 | Phase 1 | Pending |
-| SYNC-01 | Phase 1 | Pending |
-| SYNC-03 | Phase 1 | Pending |
+| INST-01 | Phase 1 | Complete |
+| INST-02 | Phase 1 | Complete |
+| INST-03 | Phase 1 | Complete |
+| INST-04 | Phase 1 | Complete |
+| INST-05 | Phase 1 | Complete |
+| SYNC-01 | Phase 1 | Complete |
+| SYNC-03 | Phase 1 | Complete |
 | AGT-01 | Phase 2 | Pending |
 | AGT-02 | Phase 2 | Pending |
 | AGT-03 | Phase 2 | Pending |

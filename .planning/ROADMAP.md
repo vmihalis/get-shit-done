@@ -12,7 +12,7 @@ This roadmap transforms GSD (Get Shit Done) into a Cline-compatible framework. T
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Installation & Foundation** - npx installer, platform detection, file structure
+- [x] **Phase 1: Installation & Foundation** - npx installer, platform detection, file structure
 - [ ] **Phase 2: Agent Infrastructure** - Parallel CLI subagent spawning and result collection
 - [ ] **Phase 3: State Management** - .planning/ directory, STATE.md, ROADMAP.md tracking
 - [ ] **Phase 4: New Project Workflow** - /gsd:new-project command with questioning and config
@@ -32,13 +32,13 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. Installer correctly detects Mac, Windows, or Linux platform
   3. Installer warns if Cline CLI is not found
   4. Workflows appear in user's Cline config directory after install
-  5. User can run `/gsd:health` and see confirmation that Cline-GSD is ready
+  5. User can run `/gsd-health` and see confirmation that Cline-GSD is ready
 **Plans**: 3 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Package scaffolding and npx entry point
-- [ ] 01-02-PLAN.md — Platform detection and Cline verification
-- [ ] 01-03-PLAN.md — Workflow file installation and health check
+- [x] 01-01-PLAN.md — Package scaffolding and npx entry point
+- [x] 01-02-PLAN.md — Platform detection and Cline verification
+- [x] 01-03-PLAN.md — Workflow file installation and health check
 
 ### Phase 2: Agent Infrastructure
 **Goal**: Cline can spawn parallel CLI subagents that write results to files
@@ -161,7 +161,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Installation & Foundation | 0/3 | Planned | - |
+| 1. Installation & Foundation | 3/3 | Complete | 2026-02-05 |
 | 2. Agent Infrastructure | 0/2 | Not started | - |
 | 3. State Management | 0/3 | Not started | - |
 | 4. New Project Workflow | 0/2 | Not started | - |
