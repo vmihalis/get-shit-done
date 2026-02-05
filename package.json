@@ -1,47 +1,39 @@
 {
-  "name": "get-shit-done-cc",
-  "version": "1.11.1",
-  "description": "A meta-prompting, context engineering and spec-driven development system for Claude Code, OpenCode and Gemini by TÂCHES.",
+  "name": "cline-gsd",
+  "version": "1.0.0",
+  "description": "GSD (Get Shit Done) workflow system for Cline",
+  "type": "module",
   "bin": {
-    "get-shit-done-cc": "bin/install.js"
+    "cline-gsd": "bin/install.js"
   },
   "files": [
     "bin",
-    "commands",
-    "get-shit-done",
-    "agents",
-    "hooks/dist",
-    "scripts"
+    "src",
+    "workflows"
   ],
   "keywords": [
-    "claude",
-    "claude-code",
+    "cline",
+    "gsd",
     "ai",
-    "meta-prompting",
-    "context-engineering",
-    "spec-driven-development",
-    "gemini",
-    "gemini-cli"
+    "workflow",
+    "cli"
   ],
-  "author": "TÂCHES",
+  "author": "memehalis",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/glittercowboy/get-shit-done.git"
+    "url": "git+https://github.com/memehalis/cline-gsd.git"
   },
-  "homepage": "https://github.com/glittercowboy/get-shit-done",
+  "homepage": "https://github.com/memehalis/cline-gsd",
   "bugs": {
-    "url": "https://github.com/glittercowboy/get-shit-done/issues"
+    "url": "https://github.com/memehalis/cline-gsd/issues"
   },
   "engines": {
-    "node": ">=16.7.0"
+    "node": ">=20.0.0"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "esbuild": "^0.24.0"
-  },
-  "scripts": {
-    "build:hooks": "node scripts/build-hooks.js",
-    "prepublishOnly": "npm run build:hooks"
+  "dependencies": {
+    "picocolors": "^1.1.1",
+    "ora": "^8.0.1",
+    "command-exists": "^1.2.9"
   }
 }
