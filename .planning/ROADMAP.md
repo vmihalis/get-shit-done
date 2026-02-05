@@ -85,7 +85,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 04-01-PLAN.md — Project-init helper module and new-project workflow
+- [x] 04-01-PLAN.md — Project-init helper module and new-project workflow
 - [ ] 04-02-PLAN.md — Progress workflow and integration test
 
 ### Phase 5: Codebase Mapping
@@ -164,7 +164,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8
 | 1. Installation & Foundation | 3/3 | Complete | 2026-02-05 |
 | 2. Agent Infrastructure | 2/2 | Complete | 2026-02-05 |
 | 3. State Management | 3/3 | Complete | 2026-02-05 |
-| 4. New Project Workflow | 0/2 | Not started | - |
+| 4. New Project Workflow | 1/2 | In progress | - |
 | 5. Codebase Mapping | 0/2 | Not started | - |
 | 6. Planning Workflow | 0/3 | Not started | - |
 | 7. Execution Workflow | 0/3 | Not started | - |

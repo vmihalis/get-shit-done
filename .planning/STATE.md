@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-05)
 
 **Core value:** Enable Cline users to build complex projects with structured, spec-driven workflow
-**Current focus:** Phase 3 - State Management (Complete)
+**Current focus:** Phase 4 - New Project Workflow
 
 ## Current Position
 
-Phase: 3 of 8 (State Management)
-Plan: 3 of 3 in current phase
-Status: Phase complete
-Last activity: 2026-02-05 — Completed 03-03-PLAN.md
+Phase: 4 of 8 (New Project Workflow)
+Plan: 1 of 2 in current phase
+Status: In progress
+Last activity: 2026-02-05 — Completed 04-01-PLAN.md
 
-Progress: [████░░░░░░] 38%
+Progress: [████░░░░░░] 43%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 8
+- Total plans completed: 9
 - Average duration: 2.3 min
-- Total execution time: 19 min
+- Total execution time: 21 min
 
 **By Phase:**
 
@@ -30,9 +30,10 @@ Progress: [████░░░░░░] 38%
 | 01 | 3 | 7 min | 2.3 min |
 | 02 | 2 | 4 min | 2 min |
 | 03 | 3 | 8 min | 2.7 min |
+| 04 | 1 | 2 min | 2 min |
 
 **Recent Trend:**
-- Last 5 plans: 02-01 (2 min), 02-02 (2 min), 03-01 (2 min), 03-02 (3 min), 03-03 (3 min)
+- Last 5 plans: 02-02 (2 min), 03-01 (2 min), 03-02 (3 min), 03-03 (3 min), 04-01 (2 min)
 - Trend: Stable
 
 *Updated after each plan completion*
@@ -67,6 +68,10 @@ Recent decisions affecting current work:
 - Config defaults merging when config.json missing [03-02]
 - Regex-based line replacement for position updates (simpler than section rebuild) [03-03]
 - updateStateSection operates on ## level only (### are part of parent) [03-03]
+- Self-contained project-init.js (no state-init.js import) to avoid circular deps [04-01]
+- Config defaults intentionally duplicated across modules for independence [04-01]
+- Workflow supports both Write tool and Node.js helper patterns [04-01]
+- 10-step workflow matching upstream GSD new-project flow [04-01]
 
 ### Pending Todos
 
@@ -78,6 +83,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-05 20:26 UTC
-Stopped at: Completed 03-03-PLAN.md (Phase 3 complete)
+Last session: 2026-02-05 21:33 UTC
+Stopped at: Completed 04-01-PLAN.md
 Resume file: None
