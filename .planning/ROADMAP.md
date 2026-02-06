@@ -150,7 +150,7 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 08-01-PLAN.md — Verify-work helper module and UAT workflow
+- [x] 08-01-PLAN.md — Verify-work helper module and UAT workflow
 - [ ] 08-02-PLAN.md — Debug-phase helper module and debugging workflow
 - [ ] 08-03-PLAN.md — Upstream sync, integration test, and package.json update
 
@@ -168,7 +168,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8
 | 5. Codebase Mapping | 2/2 | Complete | 2026-02-05 |
 | 6. Planning Workflow | 3/3 | Complete | 2026-02-05 |
 | 7. Execution Workflow | 3/3 | Complete | 2026-02-06 |
-| 8. Verification & Polish | 0/3 | Not started | - |
+| 8. Verification & Polish | 1/3 | In progress | - |
 
 ---
 *Roadmap created: 2026-02-05*

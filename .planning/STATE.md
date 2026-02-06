@@ -10,9 +10,9 @@ See: .planning/PROJECT.md (updated 2026-02-05)
 ## Current Position
 
 Phase: 8 of 8 (Verification & Polish)
-Plan: 2 of 3 in current phase
+Plan: 1 of 3 in current phase
 Status: In progress
-Last activity: 2026-02-06 -- Completed 08-02-PLAN.md
+Last activity: 2026-02-06 -- Completed 08-01-PLAN.md
 
 Progress: [█████████░] 90%
 
@@ -102,6 +102,8 @@ Recent decisions affecting current work:
 - autonomous flag is informational in main context (all execution interactive) [07-02]
 - Test 3 adapted: discoverPlans returns success:false for empty dirs (matches implementation) [07-03]
 - updateStateAfterPlan excluded from testing (covered indirectly via test-state.js) [07-03]
+- Regex section-end boundary uses $ not \Z in JavaScript regex [08-01]
+- Push pending objects on section transitions in parseMustHaves parser [08-01]
 - Debug runs in main Cline context only (no subagents) [08-02]
 - Append-only Eliminated and Evidence sections for investigation audit trail [08-02]
 - Pure formatters/parsers return values directly; I/O uses error-return [08-02]
@@ -116,6 +118,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-06 03:05 UTC
-Stopped at: Completed 08-02-PLAN.md
+Last session: 2026-02-06 03:06 UTC
+Stopped at: Completed 08-01-PLAN.md
 Resume file: None
